@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/wooden2.avif');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-header h1 {
+    font-size: 4rem;
+    color: #FFD700;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.highlight { color: #FF4500; }
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #FFD700;
+    text-decoration: none;
+    border: 1px solid #FFD700;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-link:hover { background: #FFD700; color: black; }
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 50px 150px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.dishCard {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.dishCard:hover {
+    transform: translateY(-10px);
+    border-color: #FF8C00;
+}
+
+.img-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.dishCard:hover img { transform: scale(1.1); }
+
+.dishInfo { padding: 20px; text-align: center; }
+
+.dishName { font-size: 1.6rem; color: #FFD700; margin-bottom: 5px; }
+
+.price-tag { color: #FF8C00; font-size: 1.2rem; margin-bottom: 15px; }
+
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.qt-btn {
+    background: #8B0000;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.qt-btn:hover { background: #FF4500; }
+
+.item-total { font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; opacity: 0.8; }
+
+
+.order-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 100;
+    border-top: 2px solid #FF4500;
+}
+
+.total-display { font-size: 1.8rem; font-weight: bold; color: #FFD700; }
+
+.mainOrderButton {
+    background: linear-gradient(45deg, #8B0000, #FF4500);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+}
+
+.confirm-box {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #FFD700;
+    text-align: center;
+}
+
+.order-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.order-table th { color: #FFD700; border-bottom: 1px solid #444; padding: 10px; }
+.order-table td { padding: 10px; border-bottom: 1px solid #333; }
+
+.overlay-buttons { display: flex; justify-content: space-around; margin-top: 20px; }
+.back-btn { background: #444; color: white; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; }
+.confirm-btn { background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; }

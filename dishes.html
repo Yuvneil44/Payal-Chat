@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Chat | Delicious Menu</title>
+    <link rel="stylesheet" href="dish.css">
+</head>
+<body class="menu-page">
+    <header class="menu-header">
+        <h1>Payal <span class="highlight">Chat</span></h1>
+        <p>Fresh • Spicy • Authentic</p>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <div class="grid-wrapper">
+        <div class="dishCard">
+            <div class="img-container"><img src="img/chhole_bhature.jpg" alt="Chhole Bhature"></div>
+            <div class="dishInfo">
+                <div class="dishName">Chhole Bhature</div>
+                <div class="price-tag">60₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt1(-1)">-</button>
+                    <span class="QT" id="QT1">0</span>
+                    <button class="qt-btn" onclick="qt1(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price1">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/dosa.jpg" alt="Masala Dosa"></div>
+            <div class="dishInfo">
+                <div class="dishName">Masala Dosa</div>
+                <div class="price-tag">60₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt2(-1)">-</button>
+                    <span class="QT" id="QT2">0</span>
+                    <button class="qt-btn" onclick="qt2(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price2">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/samosa.jpg" alt="Samosa Plain"></div>
+            <div class="dishInfo">
+                <div class="dishName">Samosa Plain</div>
+                <div class="price-tag">20₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt3(-1)">-</button>
+                    <span class="QT" id="QT3">0</span>
+                    <button class="qt-btn" onclick="qt3(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price3">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/chana-samosa.jpg" alt="Chana Samosa"></div>
+            <div class="dishInfo">
+                <div class="dishName">Chana Samosa</div>
+                <div class="price-tag">40₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt4(-1)">-</button>
+                    <span class="QT" id="QT4">0</span>
+                    <button class="qt-btn" onclick="qt4(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price4">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/tikki.jpg" alt="Patties Tikki"></div>
+            <div class="dishInfo">
+                <div class="dishName">Patties (Tikki) Chaat</div>
+                <div class="price-tag">30₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt5(-1)">-</button>
+                    <span class="QT" id="QT5">0</span>
+                    <button class="qt-btn" onclick="qt5(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price5">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/golgappe.jpg" alt="Golgappe"></div>
+            <div class="dishInfo">
+                <div class="dishName">Golgappe (Paani Puri)</div>
+                <div class="price-tag">10₹ (Full) / 5₹ (Half)</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt6(-1)">-</button>
+                    <span class="QT" id="QT6">0</span>
+                    <button class="qt-btn" onclick="qt6(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price6">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/pepsi1.jpg" alt="Pepsi"></div>
+            <div class="dishInfo">
+                <div class="dishName">Pepsi (750ml)</div>
+                <div class="price-tag">40₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt7(-1)">-</button>
+                    <span class="QT" id="QT7">0</span>
+                    <button class="qt-btn" onclick="qt7(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price7">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/kinley.png" alt="Water Bottle"></div>
+            <div class="dishInfo">
+                <div class="dishName">Water Bottle</div>
+                <div class="price-tag">20₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt8(-1)">-</button>
+                    <span class="QT" id="QT8">0</span>
+                    <button class="qt-btn" onclick="qt8(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price8">0</span>₹</div>
+            </div>
+        </div>
+
+        <div class="dishCard">
+            <div class="img-container"><img src="img/limca1.jpeg" alt="Limca"></div>
+            <div class="dishInfo">
+                <div class="dishName">Limca (750ml)</div>
+                <div class="price-tag">40₹</div>
+                <div class="quantity-controls">
+                    <button class="qt-btn" onclick="qt9(-1)">-</button>
+                    <span class="QT" id="QT9">0</span>
+                    <button class="qt-btn" onclick="qt9(1)">+</button>
+                </div>
+                <div class="item-total">Total: <span id="price9">0</span>₹</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-footer">
+        <button onclick="openOverlay()" class="mainOrderButton">Order Now</button>
+    </div>
+
+    <div id="confirmOverlay" class="overlay">
+        <div class="confirm-box">
+            <h2>Your Receipt</h2>
+            <div class="receipt-content">
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderItemsList"></tbody>
+                </table>
+            </div>
+            <div class="overlay-buttons">
+                <button class="back-btn" onclick="closeOverlay()">Edit Order</button>
+                <button class="confirm-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dish.js"></script>
+</body>
+</html>
