@@ -34,7 +34,7 @@ function qt1(choice) {
     let pr1ce = document.getElementById("price1");
     if (choice == -1 && qto1 > 0) {
         qto1--; priceo1 -= 60; totalPrice -= 60;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto1<6) {
         qto1++; priceo1 += 60; totalPrice += 60;
     }
     q1t.innerText = qto1; pr1ce.innerText = priceo1; total.innerText = totalPrice;
@@ -46,7 +46,7 @@ function qt2(choice) {
     let pr2ce = document.getElementById("price2");
     if (choice == -1 && qto2 > 0) {
         qto2--; priceo2 -= 60; totalPrice -= 60;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto2<6) {
         qto2++; priceo2 += 60; totalPrice += 60;
     }
     q12.innerText = qto2; pr2ce.innerText = priceo2; total.innerText = totalPrice;
@@ -58,7 +58,7 @@ function qt3(choice) {
     let pr3ce = document.getElementById("price3");
     if (choice == -1 && qto3 > 0) {
         qto3--; priceo3 -= 20; totalPrice -= 20;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto3<6) {
         qto3++; priceo3 += 20; totalPrice += 20;
     }
     q13.innerText = qto3; pr3ce.innerText = priceo3; total.innerText = totalPrice;
@@ -70,7 +70,7 @@ function qt4(choice) {
     let pr4ce = document.getElementById("price4");
     if (choice == -1 && qto4 > 0) {
         qto4--; priceo4 -= 40; totalPrice -= 40;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto4<6) {
         qto4++; priceo4 += 40; totalPrice += 40;
     }
     q14.innerText = qto4; pr4ce.innerText = priceo4; total.innerText = totalPrice;
@@ -82,7 +82,7 @@ function qt5(choice) {
     let pr5ce = document.getElementById("price5");
     if (choice == -1 && qto5 > 0) {
         qto5--; priceo5 -= 30; totalPrice -= 30;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto5<6) {
         qto5++; priceo5 += 30; totalPrice += 30;
     }
     q15.innerText = qto5; pr5ce.innerText = priceo5; total.innerText = totalPrice;
@@ -94,7 +94,7 @@ function qt6(choice) {
     let pr6ce = document.getElementById("price6");
     if (choice == -1 && qto6 > 0) {
         qto6 -= 4; priceo6 -= 5; totalPrice -= 5;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto6<56) {
         qto6 += 4; priceo6 += 5; totalPrice += 5;
     }
     q16.innerText = qto6; pr6ce.innerText = priceo6; total.innerText = totalPrice;
@@ -106,7 +106,7 @@ function qt7(choice) {
     let pr7ce = document.getElementById("price7");
     if (choice == -1 && qto7 > 0) {
         qto7--; priceo7 -= 40; totalPrice -= 40;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto7<10) {
         qto7++; priceo7 += 40; totalPrice += 40;
     }
     q17.innerText = qto7; pr7ce.innerText = priceo7; total.innerText = totalPrice;
@@ -118,7 +118,7 @@ function qt8(choice) {
     let pr8ce = document.getElementById("price8");
     if (choice == -1 && qto8 > 0) {
         qto8--; priceo8 -= 20; totalPrice -= 20;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto8<20) {
         qto8++; priceo8 += 20; totalPrice += 20;
     }
     q18.innerText = qto8; pr8ce.innerText = priceo8; total.innerText = totalPrice;
@@ -130,7 +130,7 @@ function qt9(choice) {
     let pr9ce = document.getElementById("price9");
     if (choice == -1 && qto9 > 0) {
         qto9--; priceo9 -= 40; totalPrice -= 40;
-    } else if (choice == 1) {
+    } else if (choice == 1 && qto9<10) {
         qto9++; priceo9 += 40; totalPrice += 40;
     }
     q19.innerText = qto9; pr9ce.innerText = priceo9; total.innerText = totalPrice;
