@@ -93,6 +93,11 @@ body, html {
     padding-top: 20px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
 
 @media (max-width: 768px) {
     .content-wrapper {
